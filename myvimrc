@@ -1,0 +1,12 @@
+set nu
+source $VIMRUNTIME/mswin.vim
+behave mswin
+"put indent to 4 -> if we click on tab character that appear 4 spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+"autocmd vimenter * ++nested colorscheme gruvbox
+"C/C++ support
+"augroup project
+" autocmd!
+" autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
+"augroup END
